@@ -1,0 +1,8 @@
+<a href="/add">ADD an Animal</a>
+<ul>
+  <li ng-repeat="m in vm.animals">
+    {{m.name}} {{m.type}}
+    <a href="/edit/{{m._id}}">EDIT</a>
+    <a href="#" ng-click="vm.delete(m._id)">DELETE</a>
+  </li>
+</ul>
